@@ -3,19 +3,24 @@ import { Col,
          Container, 
          Card, 
          CardBody, 
-         CardHeader 
+         CardHeader,
+         Carousel,
+         CarouselItem,
+         CarouselCaption
         } from "reactstrap";
 import SubHeader from "../components/SubHeader";
+import Accordion from "../components/Accordion";
 
 
 const AboutPage = () => {
+
   return (
     <Container>
         <SubHeader current='About Us' detail={true} />
         <Row className='row-content'>
             <Col sm='6'>
-                <h3>Get to know us</h3>
-                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                <h3>Get to know us...</h3>
+                <p>As a locally-owned spot, we take the time to research the ingredients we use to ensure we’re only serving up the best coffee and pastries in the Tacoma/Federal Way area. We’re also proud to offer a wide variety of gluten-free and vegan options. So come on in, enjoy a peaceful environment with a drink or snack, and take pride in supporting a local business. </p>
             </Col>
             <Col sm='6'>
                 <Card>
@@ -36,7 +41,7 @@ const AboutPage = () => {
                     </CardBody>
                 </Card>
             </Col>
-            <Col>
+            {/* <Col>
                 <Card className='bg-light mt-3'>
                     <CardBody>
                         <blockquote className='blockquote'>
@@ -45,12 +50,13 @@ const AboutPage = () => {
                         </blockquote>
                     </CardBody>
                 </Card>
-            </Col>
+            </Col> */}
         </Row>
         <Row className='row-content'>
             <Col xs='12'>
                 <h3>Local Partners</h3>
             </Col>
+            <Accordion />
         </Row>
     </Container>
   )

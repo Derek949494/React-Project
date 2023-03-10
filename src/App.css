@@ -1,13 +1,11 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-}
+  font-family: 'Barlow', sans-serif}
 
 h1,
 h2,
 h3,
 .card-body > .card-title {
-    font-family: 'Lobster', cursive;
-}
+  font-family: 'Barlow', sans-serif}
 
 .card-title {
     font-weight: 500;
@@ -30,6 +28,7 @@ h2 {
 }
 
 .site-footer {
+    text-align: center;
     background-image: linear-gradient(to right, #5E8C61, #88AB75, #566E3D);
     padding: 20px 0;
     margin-top: 2rem;
@@ -73,3 +72,123 @@ h2 {
     opacity: 0;
     transition: 300ms ease-in;
 }
+
+.slider {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .slider--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .slider--feature {
+    text-align: center;
+  }
+  
+  .feature--title {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .feature--text {
+    font-size: 1rem;
+    color: #fff;
+    margin: 1rem 0;
+  }
+  
+  .slider__btn-right,
+  .slider__btn-left {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 4rem;
+    color: #566E3D;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .feature__btn {
+    background: #566E3D;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    border: 1px solid #444;
+    outline: none;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+  }
+  
+  .slider__btn-left:hover,
+  .slider__btn-right:hover {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fadeIn {
+    animation: fadeIn 0.5s;
+  }
+
+  .accordion {
+    list-style: none;
+  }
+  
+  .accordion_item {
+    border-top: 1px solid #9f9f9f;
+  }
+  
+  .button {
+    font-size: 16px;
+    background-color: #5E8C61;
+    color: #fff;
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .control {
+    font-size: 20px;
+  }
+  
+  .answer {
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+
+.accordion_item.active .button {
+  background-color: #566E3D;
+}
+.answer_wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
+}
+.answer_wrapper.open {
+  height: 100px;
+}
+
+

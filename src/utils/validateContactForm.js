@@ -23,7 +23,7 @@ export const validateContactForm = (values) => {
     }
 
     if (!values.email.includes('@')) {
-        errors.email = 'Email should contain a @';
+        errors.email = 'Email should contain an @';
     }
 
     return errors;
