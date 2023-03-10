@@ -41,16 +41,6 @@ const AboutPage = () => {
                     </CardBody>
                 </Card>
             </Col>
-            {/* <Col>
-                <Card className='bg-light mt-3'>
-                    <CardBody>
-                        <blockquote className='blockquote'>
-                            <p>blah blah blah blah blah blah blah blah blah something funny blah</p>
-                            <footer className="blockquote-footer"> blah blah blah blah blah blah blah blah blah</footer>
-                        </blockquote>
-                    </CardBody>
-                </Card>
-            </Col> */}
         </Row>
         <Row className='row-content'>
             <Col xs='12'>
