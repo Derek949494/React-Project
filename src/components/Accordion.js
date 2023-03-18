@@ -1,4 +1,4 @@
-import { faqs } from "../utils/data";
+import { faqs } from "../utils/accordionData";
 import AccordionItem from "../components/AccordionItem";
 import { useState } from "react";
 

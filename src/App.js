@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
+import MenuPage from './pages/MenuPage';
 
 
 
@@ -16,6 +17,7 @@ function App() {
                 <Route path='/' element={<HomePage />} />
                 <Route path='/about' element={<AboutPage />} />
                 <Route path='contact' element={<ContactPage />} />
+                <Route path='menu' element={<MenuPage />} />
             </Routes>
         <Footer />
       </div>
